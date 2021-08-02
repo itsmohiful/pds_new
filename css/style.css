@@ -1,0 +1,658 @@
+@import url("./fonts.css");
+@import url("./varriable.css");
+/*=========*/
+body {
+  background: #ECF0F5;
+}
+
+/*====nav-start=====*/
+header .nav-top {
+  width: 20%;
+  background: #12214c;
+  height: 3rem;
+  float: left;
+}
+
+header .nav-top .nav-brands {
+  width: 4rem;
+  padding: 7px 8px;
+  margin-left: 1.2rem;
+}
+
+header .nav-top .nav-brands h3 {
+  font-family: var(--abril);
+  color: #fff;
+}
+
+header .nav-bottom {
+  width: 80%;
+  background: #138ac3;
+  height: 3rem;
+  float: right;
+}
+
+header .nav-bottom .menu-btn {
+  width: 5rem;
+  color: var(--high-color);
+  display: inline;
+  font-size: 21px;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+header .nav-bottom .menu-btn .open-btn,
+header .nav-bottom .menu-btn #open-btn {
+  margin-left: 20px;
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+header .nav-bottom .menu-btn .close-btn,
+header .nav-bottom .menu-btn #close-btn {
+  margin-left: 21px;
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+header .nav-bottom .user {
+  width: 12rem;
+  margin-right: 7px;
+  float: right;
+}
+
+header .nav-bottom .user .user-img {
+  float: left;
+  display: inline;
+  padding: 6px 3px;
+}
+
+header .nav-bottom .user .user-img img {
+  width: 35px;
+  height: 35px;
+  float: left;
+  display: inline;
+}
+
+header .nav-bottom .user .user-name {
+  display: inline;
+  float: left;
+  padding: 6px 3px;
+}
+
+header .nav-bottom .user .user-name p {
+  display: inline;
+  color: var(--high-color);
+}
+
+header .nav-bottom .user .user-name p:hover {
+  color: #dfdddd;
+}
+
+header .nav-bottom .user .log-in {
+  float: right;
+  padding: 3px 3px;
+}
+
+@media screen and (max-width: 993px) {
+  header .nav-top {
+    width: 100%;
+  }
+  header .nav-bottom {
+    width: 100%;
+  }
+  header .nav-bottom .menu-btn #open-btn {
+    display: inline;
+  }
+  main .side-menu,
+  main #side-menu {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 0;
+    display: none;
+  }
+  main .main-dashboard,
+  main #main-dashboard {
+    width: 100%;
+  }
+}
+
+/*=====nav-end====*/
+/*===== MAIN START====*/
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .side-menu {
+  width: 20%;
+  min-height: 100vh;
+  background: var(--text-color);
+  float: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .side-menu .menubar {
+  padding-top: 10px;
+}
+
+main .side-menu .menubar ul {
+  padding-left: 0;
+}
+
+main .side-menu .menubar ul li {
+  list-style: none;
+  padding: 10px 3px;
+  padding-left: 2rem;
+  font-family: var(--abril);
+  font-size: 16px;
+}
+
+main .side-menu .menubar ul li p {
+  color: #9c9a9a;
+  padding-left: 13px;
+}
+
+main .side-menu .menubar ul li i {
+  color: #dbd4d4;
+  padding-left: 7px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+main .side-menu .menubar ul li a {
+  color: #dbd4d4;
+  text-decoration: none;
+}
+
+main .side-menu .menubar ul li:hover {
+  background: #12214c;
+}
+
+main .side-menu .menubar ul li:first-child {
+  background: var(--text-color);
+}
+
+main .main-dashboard {
+  width: 80%;
+  float: right;
+  min-height: 36rem;
+}
+
+main .main-dashboard .dashboard {
+  margin-left: 40%;
+  padding-top: 7px;
+}
+
+main .main-dashboard .dashboard p {
+  padding-top: 5px;
+}
+
+main .main-dashboard .dashboard p strong {
+  color: #838282;
+}
+
+main .main-dashboard .dashboard-name {
+  width: 100%;
+  font-family: var(--abril);
+}
+
+main .main-dashboard .dashboard-name .large {
+  display: inline;
+  float: left;
+  margin-left: 3rem;
+}
+
+main .main-dashboard .dashboard-name .large p {
+  font-size: 35px;
+  padding-right: 16px;
+}
+
+main .main-dashboard .dashboard-name .smalls {
+  display: inline;
+}
+
+main .main-dashboard .dashboard-name .smalls p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+main .main-dashboard .dashboard-name .edit-btn {
+  float: right;
+  margin-right: 2rem;
+  margin-top: -2.7rem;
+}
+
+main .main-dashboard .dashboard-name .edit-btn a {
+  color: #fff;
+}
+
+main .main-dashboard .dashboard-name .edit-btn a i {
+  font-size: 14px;
+  color: #fff;
+}
+
+main .main-dashboard .dashboard-div {
+  padding: 8px;
+  width: 100%;
+}
+
+main .main-dashboard .dashboard-div .containersm {
+  padding: 1rem;
+}
+
+main .main-dashboard .dashboard-div .containers {
+  margin: 1rem;
+  background: #fff;
+  border: 1px solid #0f98d8;
+  padding: 1rem;
+}
+
+main .main-dashboard .dashboard-div .containers label {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+main .main-dashboard .dashboard-div .containers label i {
+  font-size: 8px;
+}
+
+main .main-dashboard .dashboard-div .containers .employe-img {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 4rem;
+}
+
+main .main-dashboard .dashboard-div .containers .employe-img img {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  float: left;
+}
+
+main .main-dashboard .dashboard-div .containers .employe-img .input-file {
+  display: inline;
+  margin-bottom: 3rm;
+}
+
+main .main-dashboard .dashboard-div .containers .address {
+  background: #555;
+  width: 12rem;
+  color: #fff;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+main .main-dashboard .dashboard-div .containers .general_info {
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+main .main-dashboard .dashboard-div .containers .general_info img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 1px 1px 1px 1px #555;
+          box-shadow: 1px 1px 1px 1px #555;
+}
+
+main .main-dashboard .dashboard-div .save-cancel-btn {
+  margin-bottom: 2rem;
+}
+
+main .main-dashboard .dashboard-div .save-cancel-btn .save-btn {
+  display: inline;
+  margin-left: 40%;
+}
+
+main .main-dashboard .dashboard-div .save-cancel-btn .cancel-btn {
+  display: inline;
+  margin-left: 10px;
+}
+
+main .main-dashboard .dashboard-div .info-1 {
+  height: 6rem;
+  width: 100%;
+}
+
+main .main-dashboard .dashboard-div .info-1 .info-left {
+  width: 25%;
+  height: 100%;
+  background: #F39C12;
+  float: left;
+  text-align: center;
+}
+
+main .main-dashboard .dashboard-div .info-1 .info-left i {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 22px;
+}
+
+main .main-dashboard .dashboard-div .info-1 .info-right {
+  width: 75%;
+  background: #FFF;
+  float: right;
+  height: 6rem;
+}
+
+main .main-dashboard .dashboard-div .info-1 .info-right .inf {
+  height: 100%;
+  padding: 7px 5px;
+}
+
+main .main-dashboard .dashboard-div .info-1 .info-right .inf h5 {
+  padding: 3px 2px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  main .main-dashboard .dashboard {
+    margin-left: 20%;
+  }
+  main .main-dashboard .dashboard-name .large {
+    margin-left: 1rem;
+  }
+}
+
+/*===== MAIN END====*/
+/*====Login section====*/
+/*======Log-IN-page-start=======*/
+section .log-in-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+}
+
+section .log-in-page .log-in {
+  width: 30rem;
+  height: 26rem;
+  position: absolute;
+  margin: 7% auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  left: 32%;
+  border: 1px solid var(--info-color);
+}
+
+section .log-in-page .log-in .user {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: var(--info-color);
+  margin: 0 auto;
+  margin-top: -3rem;
+}
+
+section .log-in-page .log-in .user i {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.3rem !important;
+  font-size: 34px;
+}
+
+section .log-in-page .log-in span {
+  color: var(--info-color);
+  font-size: 32px;
+  font-family: var(--roboto);
+  font-weight: 700;
+  padding: 0rem 2rem;
+  text-align: center;
+}
+
+section .log-in-page .log-in .log {
+  margin-top: 0.5rem;
+}
+
+section .log-in-page .log-in .inner-log-in {
+  margin-top: 0.2rem;
+}
+
+section .log-in-page .log-in .inner-log-in .input {
+  display: block;
+  width: 20rem;
+  height: 3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  outline: none !important;
+  border: 2px solid var(--info-color);
+  border-radius: 2rem;
+}
+
+section .log-in-page .log-in .inner-log-in input {
+  padding-left: 1rem;
+}
+
+section .log-in-page .log-in .inner-log-in .input:focus {
+  width: 21rem;
+}
+
+section .log-in-page .log-in .inner-log-in button {
+  outline: none;
+  width: 20rem;
+  height: 3rem;
+  border: var(--info-color);
+  border-radius: 2rem;
+  background: var(--info-color);
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: var(--roboto);
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section .log-in-page .log-in .inner-log-in button:hover {
+  background: #0c3480;
+  color: #fff;
+  width: 21rem;
+}
+
+section .log-in-page .log-in .inner-log-in a {
+  padding: 4px 3px;
+  display: block;
+  text-transform: capitalize;
+  color: #555;
+  text-decoration: none;
+}
+
+section .log-in-page .log-in .inner-log-in a:hover {
+  color: #0c3480;
+}
+
+section .log-in-page .pds {
+  padding: 15px 3px;
+}
+
+section .log-in-page .pds h5 {
+  text-transform: uppercase;
+  font-family: var(--abril);
+  font-size: 22px;
+  color: #333;
+  padding: 6px 3px;
+}
+
+section .log-in-page .log-footer {
+  background: #12214c;
+  width: 27rem;
+  height: 5rem;
+  border: 1px solid var(--info-color);
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+section .log-in-page .log-footer a {
+  margin-top: 6px;
+  display: inline;
+}
+
+section .log-in-page .log-footer a img {
+  margin-top: 6px;
+  width: 4rem;
+  height: 4rem;
+}
+
+/*=====login section====*/
+/****log in page start******/
+@media (max-width: 1024px) {
+  section .log-in-page .log-in {
+    width: 30rem;
+    height: 25rem;
+    margin: 12% auto;
+    left: 22%;
+  }
+}
+
+@media (max-width: 768px) {
+  section .log-in-page .log-in {
+    width: 30rem;
+    height: 25rem;
+    margin: 12% auto;
+    left: 19%;
+  }
+  section .log-in-page .log-in .user {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-top: -3rem;
+  }
+  section .log-in-page .log-in .user i {
+    margin-top: 2.3rem !important;
+    font-size: 34px;
+  }
+  section .log-in-page .log-in span {
+    color: var(--primary-color);
+    font-size: 32px;
+    padding: 0rem 2rem;
+  }
+  section .log-in-page .log-in .log {
+    margin-top: 0.5rem;
+  }
+  section .log-in-page .log-in .inner-log-in {
+    margin-top: 1.5rem;
+  }
+  section .log-in-page .log-in .inner-log-in .input {
+    width: 15rem;
+    height: 2rem;
+  }
+  section .log-in-page .log-in .inner-log-in .input:focus {
+    width: 16rem;
+  }
+  section .log-in-page .log-in .inner-log-in button {
+    width: 15rem;
+    height: 2rem;
+  }
+  section .log-in-page .log-in .inner-log-in button:hover {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 575px) {
+  section .log-in-page .log-in {
+    width: 22rem;
+    height: 27rem;
+    margin: 25% auto;
+    left: 8%;
+  }
+  section .log-in-page .log-in .inner-log-in .input {
+    width: 15rem;
+    height: 2rem;
+  }
+  section .log-in-page .log-in .inner-log-in .input:focus {
+    width: 16rem;
+  }
+  section .log-in-page .log-in .inner-log-in button {
+    width: 15rem;
+    height: 2rem;
+  }
+  section .log-in-page .log-in .inner-log-in button:hover {
+    width: 16rem;
+  }
+  section .log-in-page .log-in .log-footer {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 360px) {
+  section .log-in-page .log-in {
+    width: 20rem;
+    height: 25rem;
+    margin: 25% auto;
+    left: 5%;
+  }
+  section .log-in-page .log-in .inner-log-in .input {
+    width: 11rem;
+    height: 2rem;
+  }
+  section .log-in-page .log-in .inner-log-in .input:focus {
+    width: 12rem;
+  }
+  section .log-in-page .log-in .inner-log-in button {
+    width: 11rem;
+    height: 2rem;
+  }
+  section .log-in-page .log-in .inner-log-in button:hover {
+    width: 12rem;
+  }
+  section .log-in-page .log-in .log-footer {
+    width: 17rem;
+  }
+}
+
+/****log in page end******/
+/*=============FOOTER SECTION START=================*/
+footer {
+  width: 100%;
+  float: right;
+  background: #00061d;
+  min-height: 7rem;
+}
+
+footer h5 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: none;
+}
+
+footer h5 a img {
+  width: 4rem;
+  height: 4rem;
+}
+
+footer .help {
+  float: right;
+}
+
+/****footer section start******/
+@media (max-width: 993px) {
+  footer {
+    width: 100%;
+  }
+}
+
+/****footer section end******/
+/*=============FOOTER SECTION END=================*/
+/*# sourceMappingURL=style.css.map */

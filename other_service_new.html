@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/progress.css">
+
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    
+    <!-- ======== -->
+
+    <!-- ====NAV START==== -->
+
+    <header>
+        <div class="nav-top">
+            <div class="nav-brands">
+                <h3>PDS</h3>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="menu-btn">
+                <div class="open-btn" onclick="openSlideMenu()" id="open-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="close-btn" onclick="closeSlideMenu()" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="user">
+                <div class="user-img">
+                    <img class="rounded-circle" src="./img/user-profile/user.png" alt="user image">
+                </div>
+                <div class="user-name">
+                    <p>user@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <!-- ====NAV END==== -->
+
+
+
+    <!-- ====start main section==== -->
+    <main>
+        <section class="side-menu" id="side-menu">
+            <div class="menubar">
+                <ul id="ul-mi">
+                    <li>
+                        <p class="muted">Site Navigation</p>
+                    </li>
+                    <li class="">
+                        <i class="far fa-circle"></i>
+                        <a href="./index.html">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./general_info.html">General Info</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./Educational_info.html">Educational Info</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./Training_info.html">Trainings</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./Promotion.html">Promotions</a>
+                    </li>
+
+                    <li class="actives">
+                        <i class="far fa-circle"></i>
+                        <a href="./other_service.html">Others Service</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./chindren_info.html">Children Info</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./Spouse.html">Spouse Info</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./Posting_info.html">Posting</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./Publication.html">Publications</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./ACR.html">ACR</a>
+                    </li>
+
+                    <li>
+                        <i class="far fa-circle"></i>
+                        <a href="./language.html">Language Info</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-dashboard" id="main-dashboard">
+            <div class="dashboard">
+                <p class="muted pt-2">You are login as <strong>Enployee</strong></p>
+            </div>
+            <div class="dashboard-name py-4">
+                <div class="large">
+                    <p>Children</p>
+                </div>
+                <div class="smalls">
+                    <p>information</p>
+                </div>
+                <div class="edit-btn">
+                    <a class="btn btn-info" href="./other_service.html">
+                        <i class="fas fa-external-link-alt"></i>
+                        Back
+                    </a>
+                </div>
+            </div>
+
+            <div class="dashboard-div">
+                <div class="containers py-4">
+                    <div class="row pb-3">
+                        <div class="col-md-8 offset-2 col-10 offset-1">
+                            <form action="">
+                                <label for="inputEmail4" class="form-label">Emoloyee Name <sup><i class="fas fa-star-of-life"></i></sup></label>
+                                <input type="text" class="form-control" >
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="row pb-3">
+                        <div class="col-md-8 offset-2 col-10 offset-1">
+                            <form action="">
+                                <label for="inputEmail4" class="form-label">Sector Name <sup><i class="fas fa-star-of-life"></i></sup></label>
+                                <input type="text" class="form-control" >
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row pb-3">
+                        <div class="col-md-8 offset-2 col-10 offset-1">
+                            <form action="">
+                                <label for="inputState" class="form-label">From Date <sup><i class="fas fa-star-of-life"></i></sup></label>
+                                <input type="Date" class="form-control" >
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row pb-3">
+                        <div class="col-md-8 offset-2 col-10 offset-1">
+                            <form action="">
+                                <label for="inputEmail4" class="form-label">Address <sup><i class="fas fa-star-of-life"></i></sup></label>
+                                <input type="text" class="form-control" >
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row pb-3">
+                        <div class="col-md-8 offset-2 col-10 offset-1">
+                            <form action="">
+                                <label for="inputState" class="form-label">To Date <sup><i class="fas fa-star-of-life"></i></sup></label>
+                                <input type="date" class="form-control" >
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="save-cancel-btn">
+                        <div class="save-btn">
+                            <button type="submit" class="btn btn-info text-white">Save</button>
+                        </div>
+                        <div class="cancel-btn">
+                            <button type="reset" class="btn btn-danger">cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ====end main section==== -->
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./vendor/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/progress.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
