@@ -86,10 +86,19 @@ header{
                 padding:11px 3px;
                 padding-right: 17px;
                 .btn-infos{
-                    background: #2980b9;
+                    background: #008080;
                     color:#fff;
                 }
             }
+            // .logs-in{
+            //     float: right;
+            //     padding:11px 3px;
+            //     padding-right: 17px;
+            //     .btn-infos{
+            //         background: #2980b9;
+            //         color:#fff;
+            //     }
+            // }
         }
     }
 
@@ -134,23 +143,26 @@ header{
 
 /*===== MAIN START====*/
 main{
-    width: 100%;
+    //width: 100%;
     position:relative;
-    //min-height: 100vh;
-    .side-menu{
+    //max-height: 400rem;
+    section.side-menu{
         width: 17%;
-        //min-height: 45rem;
-        min-height: 100vh;
+        //min-height: 85rem;
+        //min-height: 100vh;
         background:#008080 ;
         float: left;
-        transition: 0.5s;
+        transition: 0.5s ease-in;
+        z-index: 1111;
         //position: ;
         .menubar{
             padding-top:10px;
             min-height: 100vh;
+            z-index: 1111;
             ul{
                 padding-left:0;
                 min-height: 100vh;
+                z-index: 1111;
                 li{
                     list-style: none;
                     padding:10px 3px;
@@ -223,8 +235,10 @@ main{
                 float: right;
                 margin-right: 2rem;
                 margin-top:-2.7rem;
+                z-index: -1111;
                 a{
                     color:#fff;
+                    z-index: -1111;
                     i{
                         font-size: 14px;
                         color:#fff
@@ -358,8 +372,9 @@ main{
      /*======Log-IN-page-start=======*/
     section{
         .log-in-page{
+            //margin-top:5rem;
             position: relative;
-            height: 100vh;
+            //height: 100vh;
             width: 100%;
             // //background-image: linear-gradient(rgba(0,0,0,0.9),rgba(3, 3, 3, 0.2)),url('../img/ifal-tower.webp');
             // background-image: linear-gradient(to bottom,rgba(52, 53, 53, 0.9),rgba(30, 33, 37, 0.5)),url('../img/log-in/dc-office-feni.jpg');
@@ -367,8 +382,8 @@ main{
             // background-repeat: no-repeat;
             // background-size: cover;
             background-position: center;
-            .log-in{
-                top:8%;
+            .logs-in{
+                margin-top:4rem;
                 width: 30rem;
                 height: 30rem;
                 position: absolute;
@@ -380,7 +395,7 @@ main{
                 left:32%;
                 //border: 2px solid #333;
                 border:1px solid var(--info-color);
-                .user{
+                .users{
                     width: 7rem;
                     height: 7rem;
                     border-radius: 50%;
@@ -444,7 +459,7 @@ main{
                         transition: 0.3s;
                     }
                     button:hover{
-                        background: #0168ad;
+                        background: #019c9c;
                         color:#fff;
                         width: 21rem;
                     }
@@ -473,7 +488,7 @@ main{
                 }
             }
             .log-footer{
-                background: #3498DB;
+                background: #008080;
                 width: 27rem;
                 height: 5rem;
                 border:1px solid var(--info-color);
@@ -506,7 +521,7 @@ main{
      @media (max-width:1024px){
         section{
             .log-in-page{
-                .log-in{
+                .logs-in{
                     width: 30rem;
                     height: 25rem;
                     margin:12% auto;
@@ -523,12 +538,12 @@ main{
      @media (max-width:768px){
         section{
             .log-in-page{
-                .log-in{
+                .logs-in{
                     width: 30rem;
                     height: 25rem;
                     margin:12% auto;
                     left:19%;
-                    .user{
+                    .users{
                         width: 7rem;
                         height: 7rem;
                         border-radius: 50%;
@@ -577,7 +592,7 @@ main{
     @media (max-width:575px){
         section{
             .log-in-page{
-                .log-in{
+                .logs-in{
                     width: 22rem;
                     height: 27rem;
                     margin:25% auto;
@@ -614,7 +629,7 @@ main{
     @media (max-width:360px){
         section{
             .log-in-page{
-                .log-in{
+                .logs-in{
                     width: 20rem;
                     height: 25rem;
                     margin:25% auto;

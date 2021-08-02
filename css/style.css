@@ -98,7 +98,7 @@ header .nav-bottom .user .log-in {
 }
 
 header .nav-bottom .user .log-in .btn-infos {
-  background: #2980b9;
+  background: #008080;
   color: #fff;
 }
 
@@ -128,30 +128,31 @@ header .nav-bottom .user .log-in .btn-infos {
 /*=====nav-end====*/
 /*===== MAIN START====*/
 main {
-  width: 100%;
   position: relative;
 }
 
-main .side-menu {
+main section.side-menu {
   width: 17%;
-  min-height: 100vh;
   background: #008080;
   float: left;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  z-index: 1111;
 }
 
-main .side-menu .menubar {
+main section.side-menu .menubar {
   padding-top: 10px;
   min-height: 100vh;
+  z-index: 1111;
 }
 
-main .side-menu .menubar ul {
+main section.side-menu .menubar ul {
   padding-left: 0;
   min-height: 100vh;
+  z-index: 1111;
 }
 
-main .side-menu .menubar ul li {
+main section.side-menu .menubar ul li {
   list-style: none;
   padding: 10px 3px;
   padding-left: 1rem;
@@ -159,28 +160,28 @@ main .side-menu .menubar ul li {
   font-size: 16px;
 }
 
-main .side-menu .menubar ul li p {
+main section.side-menu .menubar ul li p {
   color: #9c9a9a;
   padding-left: 13px;
 }
 
-main .side-menu .menubar ul li i {
+main section.side-menu .menubar ul li i {
   color: #dbd4d4;
   padding-left: 7px;
   padding-right: 10px;
   font-size: 14px;
 }
 
-main .side-menu .menubar ul li a {
+main section.side-menu .menubar ul li a {
   color: #dbd4d4;
   text-decoration: none;
 }
 
-main .side-menu .menubar ul li:hover {
+main section.side-menu .menubar ul li:hover {
   background: #016868;
 }
 
-main .side-menu .menubar ul li:first-child {
+main section.side-menu .menubar ul li:first-child {
   background: var(--text-color);
 }
 
@@ -232,10 +233,12 @@ main .main-dashboard .dashboard-name .edit-btn {
   float: right;
   margin-right: 2rem;
   margin-top: -2.7rem;
+  z-index: -1111;
 }
 
 main .main-dashboard .dashboard-name .edit-btn a {
   color: #fff;
+  z-index: -1111;
 }
 
 main .main-dashboard .dashboard-name .edit-btn a i {
@@ -372,13 +375,12 @@ main .main-dashboard .dashboard-div .info-1 .info-right .inf h5 {
 /*======Log-IN-page-start=======*/
 section .log-in-page {
   position: relative;
-  height: 100vh;
   width: 100%;
   background-position: center;
 }
 
-section .log-in-page .log-in {
-  top: 8%;
+section .log-in-page .logs-in {
+  margin-top: 4rem;
   width: 30rem;
   height: 30rem;
   position: absolute;
@@ -396,7 +398,7 @@ section .log-in-page .log-in {
   border: 1px solid var(--info-color);
 }
 
-section .log-in-page .log-in .user {
+section .log-in-page .logs-in .users {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -405,7 +407,7 @@ section .log-in-page .log-in .user {
   margin-top: -3rem;
 }
 
-section .log-in-page .log-in .user i {
+section .log-in-page .logs-in .users i {
   color: #fff;
   text-align: center;
   margin: 0 auto;
@@ -421,7 +423,7 @@ section .log-in-page .log-in .user i {
   font-size: 34px;
 }
 
-section .log-in-page .log-in span {
+section .log-in-page .logs-in span {
   color: var(--info-color);
   font-size: 32px;
   font-family: var(--roboto);
@@ -430,15 +432,15 @@ section .log-in-page .log-in span {
   text-align: center;
 }
 
-section .log-in-page .log-in .log {
+section .log-in-page .logs-in .log {
   margin-top: 0.5rem;
 }
 
-section .log-in-page .log-in .inner-log-in {
+section .log-in-page .logs-in .inner-log-in {
   margin-top: 0.2rem;
 }
 
-section .log-in-page .log-in .inner-log-in .input {
+section .log-in-page .logs-in .inner-log-in .input {
   display: block;
   width: 20rem;
   height: 3rem;
@@ -449,15 +451,15 @@ section .log-in-page .log-in .inner-log-in .input {
   border-radius: 2rem;
 }
 
-section .log-in-page .log-in .inner-log-in input {
+section .log-in-page .logs-in .inner-log-in input {
   padding-left: 1rem;
 }
 
-section .log-in-page .log-in .inner-log-in .input:focus {
+section .log-in-page .logs-in .inner-log-in .input:focus {
   width: 21rem;
 }
 
-section .log-in-page .log-in .inner-log-in button {
+section .log-in-page .logs-in .inner-log-in button {
   outline: none;
   width: 20rem;
   height: 3rem;
@@ -474,13 +476,13 @@ section .log-in-page .log-in .inner-log-in button {
   transition: 0.3s;
 }
 
-section .log-in-page .log-in .inner-log-in button:hover {
-  background: #0168ad;
+section .log-in-page .logs-in .inner-log-in button:hover {
+  background: #019c9c;
   color: #fff;
   width: 21rem;
 }
 
-section .log-in-page .log-in .inner-log-in a {
+section .log-in-page .logs-in .inner-log-in a {
   padding: 4px 3px;
   display: block;
   text-transform: capitalize;
@@ -488,7 +490,7 @@ section .log-in-page .log-in .inner-log-in a {
   text-decoration: none;
 }
 
-section .log-in-page .log-in .inner-log-in a:hover {
+section .log-in-page .logs-in .inner-log-in a:hover {
   color: #3498DB;
 }
 
@@ -505,7 +507,7 @@ section .log-in-page .pds h5 {
 }
 
 section .log-in-page .log-footer {
-  background: #3498DB;
+  background: #008080;
   width: 27rem;
   height: 5rem;
   border: 1px solid var(--info-color);
@@ -527,7 +529,7 @@ section .log-in-page .log-footer a img {
 /*=====login section====*/
 /****log in page start******/
 @media (max-width: 1024px) {
-  section .log-in-page .log-in {
+  section .log-in-page .logs-in {
     width: 30rem;
     height: 25rem;
     margin: 12% auto;
@@ -536,97 +538,97 @@ section .log-in-page .log-footer a img {
 }
 
 @media (max-width: 768px) {
-  section .log-in-page .log-in {
+  section .log-in-page .logs-in {
     width: 30rem;
     height: 25rem;
     margin: 12% auto;
     left: 19%;
   }
-  section .log-in-page .log-in .user {
+  section .log-in-page .logs-in .users {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
     margin-top: -3rem;
   }
-  section .log-in-page .log-in .user i {
+  section .log-in-page .logs-in .users i {
     margin-top: 2.3rem !important;
     font-size: 34px;
   }
-  section .log-in-page .log-in span {
+  section .log-in-page .logs-in span {
     color: var(--primary-color);
     font-size: 32px;
     padding: 0rem 2rem;
   }
-  section .log-in-page .log-in .log {
+  section .log-in-page .logs-in .log {
     margin-top: 0.5rem;
   }
-  section .log-in-page .log-in .inner-log-in {
+  section .log-in-page .logs-in .inner-log-in {
     margin-top: 1.5rem;
   }
-  section .log-in-page .log-in .inner-log-in .input {
+  section .log-in-page .logs-in .inner-log-in .input {
     width: 15rem;
     height: 2rem;
   }
-  section .log-in-page .log-in .inner-log-in .input:focus {
+  section .log-in-page .logs-in .inner-log-in .input:focus {
     width: 16rem;
   }
-  section .log-in-page .log-in .inner-log-in button {
+  section .log-in-page .logs-in .inner-log-in button {
     width: 15rem;
     height: 2rem;
   }
-  section .log-in-page .log-in .inner-log-in button:hover {
+  section .log-in-page .logs-in .inner-log-in button:hover {
     width: 16rem;
   }
 }
 
 @media (max-width: 575px) {
-  section .log-in-page .log-in {
+  section .log-in-page .logs-in {
     width: 22rem;
     height: 27rem;
     margin: 25% auto;
     left: 8%;
   }
-  section .log-in-page .log-in .inner-log-in .input {
+  section .log-in-page .logs-in .inner-log-in .input {
     width: 15rem;
     height: 2rem;
   }
-  section .log-in-page .log-in .inner-log-in .input:focus {
+  section .log-in-page .logs-in .inner-log-in .input:focus {
     width: 16rem;
   }
-  section .log-in-page .log-in .inner-log-in button {
+  section .log-in-page .logs-in .inner-log-in button {
     width: 15rem;
     height: 2rem;
   }
-  section .log-in-page .log-in .inner-log-in button:hover {
+  section .log-in-page .logs-in .inner-log-in button:hover {
     width: 16rem;
   }
-  section .log-in-page .log-in .log-footer {
+  section .log-in-page .logs-in .log-footer {
     width: 19rem;
   }
 }
 
 @media (max-width: 360px) {
-  section .log-in-page .log-in {
+  section .log-in-page .logs-in {
     width: 20rem;
     height: 25rem;
     margin: 25% auto;
     left: 5%;
   }
-  section .log-in-page .log-in .inner-log-in .input {
+  section .log-in-page .logs-in .inner-log-in .input {
     width: 11rem;
     height: 2rem;
   }
-  section .log-in-page .log-in .inner-log-in .input:focus {
+  section .log-in-page .logs-in .inner-log-in .input:focus {
     width: 12rem;
   }
-  section .log-in-page .log-in .inner-log-in button {
+  section .log-in-page .logs-in .inner-log-in button {
     width: 11rem;
     height: 2rem;
   }
-  section .log-in-page .log-in .inner-log-in button:hover {
+  section .log-in-page .logs-in .inner-log-in button:hover {
     width: 12rem;
   }
-  section .log-in-page .log-in .log-footer {
+  section .log-in-page .logs-in .log-footer {
     width: 17rem;
   }
 }

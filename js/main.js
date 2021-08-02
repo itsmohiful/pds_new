@@ -7,6 +7,7 @@ function openSlideMenu(){
     //document.getElementById('ul-mi').style.display='block';
     document.getElementById('close-btn').style.display='inline';
     document.getElementById('open-btn').style.display='none';
+    document.getElementById('edit-btn').style.display='none';
 }
 
 function closeSlideMenu(){
@@ -18,4 +19,5 @@ function closeSlideMenu(){
     document.getElementById('main-dashboard').style.width='100%';
     document.getElementById('open-btn').style.display='inline';
     document.getElementById('close-btn').style.display='none';
+    document.getElementById('edit-btn').style.display='inline';
 }
