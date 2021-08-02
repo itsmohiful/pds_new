@@ -1,3 +1,4 @@
+@import url('./fonts.css');
 *{
     margin:0;
     padding:0;
@@ -6,7 +7,9 @@
 
 
 :root{
-    --abril:"Abril_Fateface",curseive;
+    --poppins1:"Poppins1",cursive;
+    --poppins2:"Poppins2",cursive;
+    --abril:"Abril_Fateface",cursive;
     --parata:"Prata",sans-serif;
     --roboto:"Roboto",cursive;
     --lato:"Lato",cursive;
@@ -15,10 +18,10 @@
     --gugi:"Gugi",cursive;
     --primary-color:#ec5b53;
     --secondary-color:#2BBBAD;
-    --text-color:#000A2D;
+    --text-color:#008080;
     --high-color:#FEF8F8;
     --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
     --primary1-color:#3498DB;
-    --info-color:#03286b;
+    --info-color:#3498DB;
 
 }

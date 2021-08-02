@@ -16,3 +16,12 @@
     font-family: "Gugi";
     src: url('../fonts/Gugi/Gugi-Regular.ttf');
 }
+
+@font-face {
+    font-family: "Poppins1";
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: "Poppins2";
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}

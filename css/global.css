@@ -10,9 +10,18 @@
     background:var(--primary-color);
 }
 .actives{
-    background: #12214c;
+    background: #016868;
 }
 
+.bgs-1{
+    background:#2196F3;
+}
+.bgs-2{
+    background:#3F51B5;
+}
+.bgs-3{
+    background:#EF4F4C;
+}
 button:hover,
 button:active,
 button:focus,
