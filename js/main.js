@@ -1,5 +1,5 @@
 function openSlideMenu(){
-    document.getElementById('side-menu').style.width='100%';
+    document.getElementById('side-menu').style.width='100vw';
     document.getElementById('side-menu').style.display='block';
     document.getElementById('side-menu').style.transition='0.5s';
     document.getElementById('main-dashboard').style.width='0%';
