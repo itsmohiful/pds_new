@@ -6,33 +6,48 @@ body {
 }
 
 /*====nav-start=====*/
-header .nav-top {
+header {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+}
+
+header .navs {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  z-index: 1111;
+}
+
+header .navs .nav-top {
   width: 55%;
   background: #333;
-  height: 4rem;
+  height: 100%;
   float: left;
 }
 
-header .nav-top .nav-brands {
+header .navs .nav-top .nav-brands {
   float: left;
-  padding: 20px 8px;
+  height: 100%;
   margin-left: 1.2rem;
 }
 
-header .nav-top .nav-brands h3 {
+header .navs .nav-top .nav-brands h3 {
   font-family: var(--poppins1);
   color: #fff;
   font-size: 22px;
+  padding: 18px 5px;
 }
 
-header .nav-bottom {
+header .navs .nav-bottom {
   width: 45%;
   background: #333;
-  height: 4rem;
+  height: 100%;
   float: right;
 }
 
-header .nav-bottom .menu-btn {
+header .navs .nav-bottom .menu-btn {
   width: 5rem;
   color: var(--high-color);
   display: inline;
@@ -41,75 +56,75 @@ header .nav-bottom .menu-btn {
   margin-top: 3px;
 }
 
-header .nav-bottom .menu-btn .open-btn,
-header .nav-bottom .menu-btn #open-btn {
+header .navs .nav-bottom .menu-btn .open-btn,
+header .navs .nav-bottom .menu-btn #open-btn {
   margin-left: 20px;
   display: none;
   z-index: 10;
   cursor: pointer;
 }
 
-header .nav-bottom .menu-btn .close-btn,
-header .nav-bottom .menu-btn #close-btn {
+header .navs .nav-bottom .menu-btn .close-btn,
+header .navs .nav-bottom .menu-btn #close-btn {
   margin-left: 21px;
   display: none;
   z-index: 10;
   cursor: pointer;
 }
 
-header .nav-bottom .user {
+header .navs .nav-bottom .user {
   width: 18rem;
   margin-right: 7px;
   float: right;
 }
 
-header .nav-bottom .user .user-img {
+header .navs .nav-bottom .user .user-img {
   float: left;
   display: inline;
   padding: 13px 3px;
 }
 
-header .nav-bottom .user .user-img img {
+header .navs .nav-bottom .user .user-img img {
   width: 35px;
   height: 35px;
   float: left;
   display: inline;
 }
 
-header .nav-bottom .user .user-name {
+header .navs .nav-bottom .user .user-name {
   display: inline;
   float: left;
   padding: 14px 3px;
 }
 
-header .nav-bottom .user .user-name p {
+header .navs .nav-bottom .user .user-name p {
   display: inline;
   color: var(--high-color);
 }
 
-header .nav-bottom .user .user-name p:hover {
+header .navs .nav-bottom .user .user-name p:hover {
   color: #dfdddd;
 }
 
-header .nav-bottom .user .log-in {
+header .navs .nav-bottom .user .log-in {
   float: right;
   padding: 11px 3px;
   padding-right: 17px;
 }
 
-header .nav-bottom .user .log-in .btn-infos {
+header .navs .nav-bottom .user .log-in .btn-infos {
   background: #008080;
   color: #fff;
 }
 
 @media screen and (max-width: 993px) {
-  header .nav-top {
+  header .navs .nav-top {
     width: 100%;
   }
-  header .nav-bottom {
+  header .navs .nav-bottom {
     width: 100%;
   }
-  header .nav-bottom .menu-btn #open-btn {
+  header .navs .nav-bottom .menu-btn #open-btn {
     display: inline;
   }
   main .side-menu,
@@ -128,21 +143,28 @@ header .nav-bottom .user .log-in .btn-infos {
 /*=====nav-end====*/
 /*===== MAIN START====*/
 main {
-  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 main section.side-menu {
   width: 17%;
+  position: fixed;
+  min-height: 100vh;
   background: #008080;
   float: left;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   z-index: 1111;
+  overflow-y: auto;
 }
 
 main section.side-menu .menubar {
-  padding-top: 10px;
-  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
   z-index: 1111;
 }
 
@@ -154,15 +176,16 @@ main section.side-menu .menubar ul {
 
 main section.side-menu .menubar ul li {
   list-style: none;
-  padding: 10px 3px;
+  padding: 9px 3px;
   padding-left: 1rem;
   font-family: var(--poppins1);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main section.side-menu .menubar ul li p {
   color: #9c9a9a;
   padding-left: 13px;
+  padding-bottom: 0;
 }
 
 main section.side-menu .menubar ul li i {
@@ -177,18 +200,24 @@ main section.side-menu .menubar ul li a {
   text-decoration: none;
 }
 
+main section.side-menu .menubar ul li p {
+  margin-top: 10px;
+}
+
 main section.side-menu .menubar ul li:hover {
   background: #016868;
 }
 
 main section.side-menu .menubar ul li:first-child {
   background: var(--text-color);
+  padding-bottom: 0;
 }
 
 main .main-dashboard {
   width: 83%;
   float: right;
   min-height: 36rem;
+  position: relative;
 }
 
 main .main-dashboard .dashboard {
